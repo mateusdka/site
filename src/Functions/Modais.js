@@ -1,7 +1,11 @@
-function Modais( { taxaCliques, setTaxaCliques, taxaConversao, setTaxaConversao, ticketMedio, setTicketMedio } ) {
+// Este módulo contém um componente React chamado "Modais" que exibe informações adicionais em modais (janelas pop-up) quando o usuário clica em botões de ajuda.
+// O componente utiliza a biblioteca Bootstrap para estilização e funcionalidade dos modais.
+// Ele contém cinco modais diferentes, cada um com informações específicas sobre o cálculo, estratégias de marketing, tipo de empresa, taxa de cliques (CTR), taxa de conversão e ticket médio.
+function Modais() {
     return (
         <div>
 
+            {/* Modal sobre o Cálculo */}
             <div class="modal fade" id="modalCalculo" tabindex="-1" aria-labelledby="modalCalculo" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -19,6 +23,7 @@ function Modais( { taxaCliques, setTaxaCliques, taxaConversao, setTaxaConversao,
                 </div>
             </div>
 
+            {/* Modal sobre as Fases da Estratégia */}
             <div class="modal fade" id="modalEstrategia" tabindex="-1" aria-labelledby="modalEstrategia" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -39,6 +44,7 @@ function Modais( { taxaCliques, setTaxaCliques, taxaConversao, setTaxaConversao,
                 </div>
             </div>
 
+            {/* Modal sobre os Canais */}
             <div class="modal fade" id="modalEmpresa" tabindex="-1" aria-labelledby="modalEmpresa" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -62,6 +68,7 @@ function Modais( { taxaCliques, setTaxaCliques, taxaConversao, setTaxaConversao,
                 </div>
             </div>
 
+            {/* Modal sobre a Taxa de Cliques (CTR), Taxa de Conversão e Ticket Médio */}
             <div class="modal fade" id="modalCtr" tabindex="-1" aria-labelledby="modalCtr" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">

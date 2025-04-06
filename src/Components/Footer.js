@@ -1,3 +1,5 @@
+// Rodapé do site
+
 function Footer() {
     return (
       <footer className="bg-white p-4">

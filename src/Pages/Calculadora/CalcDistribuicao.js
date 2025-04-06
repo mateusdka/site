@@ -7,21 +7,25 @@ import logoGoogle from "../../Img/googleads.svg";
 import logoLinkedin from "../../Img/linkedin.svg";
 
 function CalcDistribuicao({ budget }) {
-    const [estrategia, setEstrategia] = useState(0);
-    const [empresa, setEmpresa] = useState(0);
-    const calculo = EstrategiaComunicacao(budget, estrategia, empresa);
+    const [estrategia, setEstrategia] = useState(0); // 0 = Lançamento de Produto/Empresa, 1 = Ampliação da Comunicação
+    const [empresa, setEmpresa] = useState(0); // 0 = Empresa/Produto B2B ou de Nicho, 1 = Empresa/Produto de Varejo/E-Commerce
+    const calculo = EstrategiaComunicacao(budget, estrategia, empresa); // calculo da distribuição de investimento
 
     return (
         <div>
             <div className="row gap-4 mt-4">
 
                 <div className="col-lg bg-dark rounded p-3 position-relative">
+                    {/* Modal de Ajuda para Distribuição por Fases */}
                     <button type="button" className="btn position-absolute top-0 end-0" data-bs-toggle="modal" data-bs-target="#modalEstrategia">
                         <Icon name="help" size={25} color="grey" />
                     </button>
+
                     <h3 className="mt-3">Distribuição por Fases</h3>
+                    {/* Visualização da Estratégia aplicada */}
                     <p><strong>Estratégia aplicada:</strong> {estrategia === 0 ? "Lançamento de Produto/Empresa" : "Ampliação da Comunicação"}</p>
 
+                    {/* Botão para trocar a estratégia */}
                     <button className="btn btn-outline-light" onClick={estrategia === 0 ? () => setEstrategia(1) : () => setEstrategia(0)}>
                         <Icon name="refresh" size={16} color="grey" /> Trocar Estratégia
                     </button>
@@ -44,12 +48,16 @@ function CalcDistribuicao({ budget }) {
                 </div>
 
                 <div className="col-lg bg-dark rounded p-3 position-relative">
+                    {/* Modal de Ajuda para Distribuição por Canais */}
                     <button type="button" className="btn position-absolute top-0 end-0" data-bs-toggle="modal" data-bs-target="#modalEmpresa">
                         <Icon name="help" size={25} color="grey" />
                     </button>
+
                     <h3 className="mt-3">Distribuição por Canais</h3>
+                    {/* Visualização da Estratégia aplicada */}
                     <p><strong>Estratégia aplicada:</strong> {empresa === 0 ? "Empresa/Produto B2B ou de Nicho" : "Empresa/Produto de Varejo/E-Commerce"}</p>
 
+                    {/* Botão para trocar a estratégia */}
                     <button className="btn btn-outline-light" onClick={empresa === 0 ? () => setEmpresa(1) : () => setEmpresa(0)}>
                         <Icon name="refresh" size={16} color="grey" /> Trocar Estratégia
                     </button>
@@ -75,6 +83,9 @@ function CalcDistribuicao({ budget }) {
             <div className="row gap-4 mt-4">
 
                 <div className="bg-dark rounded p-3  table-responsive-lg">
+                    
+                    {/* Tabela de Distribuição de Investimento */}
+                    {/* Para os custos diários foi considerado a distribuição sobre 30,4 dias no mês */}
                     <table className="table table-dark table-sm">
                         <thead>
                             <tr>

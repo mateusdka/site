@@ -1,3 +1,5 @@
+// Componente para exibir ícones SVG personalizados.
+
 function Icon({ name, size = 24, color = 'black' }) {
     const lista = [
         {
@@ -119,6 +121,7 @@ function Icon({ name, size = 24, color = 'black' }) {
     // Se o ícone não for encontrado, não renderiza nada
     if (!icon) return null;
 
+    // Renderizar o ícone encontrado
     return (
         <svg xmlns="http://www.w3.org/2000/svg" 
              height={size} 

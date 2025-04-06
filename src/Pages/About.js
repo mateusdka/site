@@ -1,3 +1,4 @@
+import LogoWhite from '../Img/logowhite.svg';
 import Me from '../Img/me.jpg';
 import LogoLinkedin from "../Img/linkedin.svg";
 
@@ -5,7 +6,7 @@ function About() {
   return (
     <div>
       <div className="container-lg bg-white rounded p-5 banner-home mt-4 mb-4">
-        <h1 className="display-1 banner-text rounded p-3">Sobre</h1>
+        <h3 className="display-4 banner-text rounded p-3">Sobre</h3>
       </div>
 
       <div className="container-lg bg-black rounded text-white p-5">
@@ -37,6 +38,8 @@ function About() {
               no desenvolvimento de soluções híbridas — entre comunicação, experiência e 
               sistemas. Este site vai sendo atualizado conforme o percurso avança. E ele vai 
               mudar bastante, porque ainda tem muita coisa pra acontecer.</p>
+
+            <img src={LogoWhite} alt="Logo" className="img-fluid mt-4" style={{ width: '100px' }} />
 
           </div>
         </div>

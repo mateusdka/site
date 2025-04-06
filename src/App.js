@@ -1,3 +1,8 @@
+// Arquivo principal do projeto
+// Este arquivo é responsável por renderizar o componente principal do aplicativo
+// e configurar as rotas utilizando o React Router.
+// Ele também importa os componentes de navegação e rodapé, além de estilos globais.
+// O componente App é o ponto de entrada do aplicativo e encapsula toda a lógica de roteamento.
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -13,6 +18,7 @@ function App() {
     <Router>
       <Navigation />
         <div className='conteudo p-4'>
+          
           {/* Estabelece todas as rotas */}
           <Routes>
             <Route path="/" element={ <Home /> } />

@@ -1,19 +1,35 @@
+
+// Esta função calcula a distribuição do orçamento de comunicação entre diferentes canais e fases, com base na estratégia escolhida e no tipo de empresa.
+// A função recebe três parâmetros:
+// 1. budget: o orçamento total disponível para comunicação.
+// 2. estrategia: a estratégia de comunicação escolhida (0 ou 1).
+// 3. empresa: o tipo de empresa (0 ou 1).
+
 function EstrategiaComunicacao(budget, estrategia, empresa) {
 
+    // Definindo a distribuição do orçamento entre as fases de comunicação com base na estratégia escolhida.
+    // A estratégia 0 prioriza a fase de awareness (conhecimento), enquanto a estratégia 1 prioriza a fase de consideration (consideração).
+    // A distribuição é feita em três fases: awareness (aw), consideration (cn) e decision (dc).
     let estrategiaFases = [0, 0, 0];
     estrategia === 0 ? 
         estrategiaFases = [0.5, 0.3, 0.2] : 
-        estrategiaFases = [0.2, 0.5, 0.3];
+        estrategiaFases = [0.2, 0.5, 0.3]; 
 
+    // Calculando o valor de cada fase com base no orçamento total e na distribuição definida.
     let awFase = budget * estrategiaFases[0];
     let cnFase = budget * estrategiaFases[1];
     let dcFase = budget * estrategiaFases[2];
 
+    // Definindo a distribuição do orçamento entre os canais de comunicação (Meta, Google e LinkedIn) com base no tipo de empresa.
+    // A distribuição é feita em três canais: Meta, Google e LinkedIn.
+    // A distribuição varia dependendo do tipo de empresa (0 ou 1).
+    // A matriz tipoEmpresa define a proporção de investimento em cada canal para cada fase.
     let tipoEmpresa = [[0, 0, 0], [0, 0, 0], [0, 0, 0]];
     empresa === 0 ?
         tipoEmpresa = [[0.3, 0.3, 0.4], [0.4, 0.2, 0.4], [0.4, 0.2, 0.4]] :
         tipoEmpresa = [[0.4, 0.4, 0.2], [0.5, 0.5, 0], [0.5, 0.5, 0]];
 
+    // Calculando o valor a ser investido em cada canal de comunicação (Meta, Google e LinkedIn) para cada fase.
     let awMeta = awFase * tipoEmpresa[0][0];
     let awGoogle = awFase * tipoEmpresa[0][1];
     let awLinkedin = awFase * tipoEmpresa[0][2];
@@ -26,42 +42,54 @@ function EstrategiaComunicacao(budget, estrategia, empresa) {
     let dcGoogle = dcFase * tipoEmpresa[2][1];
     let dcLinkedin = dcFase * tipoEmpresa[2][2];
 
+    // Calculando o valor total a ser investido em cada canal de comunicação (Meta, Google e LinkedIn) somando os valores de todas as fases.
     let invMeta = awMeta + cnMeta + dcMeta;
     let invGoogle = awGoogle + cnGoogle + dcGoogle;
     let invLinkedin = awLinkedin + cnLinkedin + dcLinkedin;
 
+    // Calculando a porcentagem do investimento em cada canal em relação ao orçamento total.
     let invMetaPercent = invMeta / budget;
     let invGooglePercent = invGoogle / budget;
     let invLinkedinPercent = invLinkedin / budget;
 
+    // Definindo a distribuição final do orçamento entre os canais de comunicação com base em condições específicas.
     let distrFinal = [[0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0], [0, 0, 0, 0, 0]];
 
-    if (awMeta > 5000) { distrFinal[0][0] = 0.35; distrFinal[0][1] = 0.35; distrFinal[0][2] = 0.30 }
+    // A distribuição é ajustada com base em valores específicos de investimento em cada canal.
+    // Se o investimento em Meta for maior que 5000, a distribuição é ajustada para comportar segmentações como Look Alike.
+        if (awMeta > 5000) { distrFinal[0][0] = 0.35; distrFinal[0][1] = 0.35; distrFinal[0][2] = 0.30 }
     else { distrFinal[0][0] = 0.40; distrFinal[0][1] = 0.60; distrFinal[0][2] = 0.0; };
 
+    // Se o investimento em Google for maior que 5000, a distribuição é ajustada para comportar segmentações com Listas.
     if (awGoogle > 5000) { distrFinal[0][3] = 0.40; distrFinal[0][4] = 0.50; distrFinal[0][5] = 0.10 }
     else { distrFinal[0][3] = 0.50; distrFinal[0][4] = 0.50; distrFinal[0][5] = 0.0; };
-
+    
+    // O Linkedin exige um investimento mínimo de 800 para ser considerado.
     if (awLinkedin > 800) { distrFinal[0][6] = 1.0 } 
     else { distrFinal[0][6] = 0.0; };
 
+    // Se o investimento em Google for maior que 2000, a distribuição é ajustada para comportar o uso de Banners (Display).
+    // Caso contrário, a distribuição é ajustada para comportar apenas o uso de Search.
     if (cnGoogle > 2000) { distrFinal[1][1] = 0.40; distrFinal[1][2] = 0.60 }
     else { distrFinal[1][1] = 1.00; distrFinal[1][2] = 0.00; };
 
+    // O Linkedin exige um investimento mínimo de 800 para ser considerado.
     if (cnLinkedin > 800) { distrFinal[1][3] = 1.00; } 
     else { distrFinal[1][3] = 0.00; };
 
+    // Se o investimento em Meta for maior que 2000, a distribuição é ajustada para comportar o uso do formato Lead Ad.
     if (dcMeta > 2000) { distrFinal[2][0] = 0.30; distrFinal[2][1] = 0.70 }
     else { distrFinal[2][0] = 0.50; distrFinal[2][1] = 0.50; };
 
+    // Se o investimento em Google for maior que 2000, a distribuição é ajustada para comportar o uso de Banners (Display).
     if (dcGoogle > 2000) { distrFinal[2][2] = 0.60; distrFinal[2][3] = 0.40 }
     else { distrFinal[2][2] = 0.40; distrFinal[2][3] = 0.60; };
 
+    // O Linkedin exige um investimento mínimo de 800 para ser considerado.
     if (dcLinkedin > 800) { distrFinal[2][4] = 1.00; } 
     else { distrFinal[2][4] = 0.00; };
 
-    /* teste */
-
+    // A distribuição final é ajustada com base nos valores de investimento em cada canal.
     let investFinal = [
         [
             distrFinal[0][0] * awMeta,
@@ -85,6 +113,7 @@ function EstrategiaComunicacao(budget, estrategia, empresa) {
         ]
     ];
 
+    // Retornando um objeto com todas as informações calculadas, incluindo os valores de investimento em cada fase e canal.
     return ({
         "awFase" : awFase,
         "awFaseP" : estrategiaFases[0],

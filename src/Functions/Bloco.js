@@ -1,5 +1,11 @@
 import Icon from "./Icons";
 
+// Componente para exibir informações em blocos, como ícones, títulos e valores.
+// Este componente é utilizado em várias partes do aplicativo para apresentar dados de forma visualmente atraente.
+// O componente recebe ícones, tamanhos, cores, títulos e valores como propriedades para personalização.
+// O componente também pode incluir um botão de ajuda que, quando clicado, exibe um modal com informações adicionais.
+// O componente é projetado para ser reutilizável em diferentes partes do aplicativo, tornando-o versátil e fácil de manter.
+
 function Bloco(iconName, iconSize, iconColor, title, valueDisplay, valueSubtitle,helpModal,modalName) {
 
   return (
