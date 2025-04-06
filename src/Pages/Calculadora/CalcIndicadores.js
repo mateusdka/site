@@ -1,6 +1,6 @@
-import Bloco from "../Functions/Bloco";
-import { formataMoeda, formataPercent, formataValores } from "../Functions/Formatador";
-import AddRemove from "../Functions/AdicionarRemover";
+import Bloco from "../../Functions/Bloco";
+import { formataMoeda, formataPercent, formataValores } from "../../Functions/Formatador";
+import AddRemove from "../../Functions/AdicionarRemover";
 
 function CalcIndicadores({budget, publico, taxaCliques, taxaConversao, ticketMedio, setTaxaCliques, setTaxaConversao, setTicketMedio}) {
 

@@ -1,11 +1,10 @@
 import { useState } from "react";
-import { formataMoeda, formataValores } from "../Functions/Formatador";
-import Bloco from "../Functions/Bloco";
-import AddRemove from "../Functions/AdicionarRemover";
+import { formataMoeda, formataValores } from "../../Functions/Formatador";
+import Bloco from "../../Functions/Bloco";
+import AddRemove from "../../Functions/AdicionarRemover";
 import CalcIndicadores from "./CalcIndicadores";
 import CalcDistribuicao from "./CalcDistribuicao";
-import Icon from "../Functions/Icons";
-import Modais from "../Functions/Modais";
+import Modais from "../../Functions/Modais";
 
 function Calculadora() {
   const [budget, setBudget] = useState(1000);
@@ -19,7 +18,7 @@ function Calculadora() {
     <div>
 
       <div className="container-lg bg-white rounded p-5 banner-home mt-4 mb-4">
-        <h3 className="display-4 banner-text p-3">Calculadora de Campanhas</h3>
+        <h3 className="display-4 banner-text rounded p-3">Calculadora de Campanhas</h3>
       </div>
 
       <div className="container-lg bg-black rounded text-white p-5">

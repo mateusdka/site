@@ -17,9 +17,6 @@ function Navigation() {
             <li className="nav-item">
               <Link to="/" className={location.pathname === '/' ? 'nav-link nav-active' : 'nav-link'}>Home</Link>
             </li>
-            <li className="nav-item">
-              <Link to="/sobre" className={location.pathname === '/sobre' ? 'nav-link nav-active' : 'nav-link'}>Sobre</Link>
-            </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Projetos
@@ -29,8 +26,14 @@ function Navigation() {
                   <Link to="/projetos/calculadora-de-campanhas" className={location.pathname === '/projetos/calculadora-de-campanhas' ?
                     'nav-link nav-active' : 'nav-link'}>Calculadora de Campanhas
                   </Link>
+                  <Link to="/projetos/cartas-de-tarot" className={location.pathname === '/projetos/cartas-de-tarot' ?
+                    'nav-link nav-active' : 'nav-link'}>Cartas de Tarot
+                  </Link>
                 </li>
               </ul>
+            </li>
+            <li className="nav-item">
+              <Link to="/sobre" className={location.pathname === '/sobre' ? 'nav-link nav-active' : 'nav-link'}>Sobre</Link>
             </li>
           </ul>
         </div>

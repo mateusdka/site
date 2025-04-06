@@ -5,7 +5,8 @@ import Footer from './Components/Footer';
 import Navigation from './Components/Navigation';
 import Home from './Pages/Home';
 import About from './Pages/About';
-import Calculadora from './Pages/Calculadora';
+import Calculadora from './Pages/Calculadora/Calculadora';
+import Cartas from './Pages/Cartas/Cartas';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/" element={ <Home /> } />
             <Route path="/sobre" element={ <About /> } />
             <Route path="/projetos/calculadora-de-campanhas" element={ <Calculadora /> } />
+            <Route path="/projetos/cartas-de-tarot" element={ <Cartas /> } />
           </Routes>
         </div>
       <Footer />

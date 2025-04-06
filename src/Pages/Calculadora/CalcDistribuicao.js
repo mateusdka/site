@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import EstrategiaComunicacao from "../Functions/Calculos";
-import Icon from "../Functions/Icons";
-import { formataMoeda, formataPercent } from "../Functions/Formatador";
-import logoMeta from "../Img/meta.svg";
-import logoGoogle from "../Img/googleads.svg";
-import logoLinkedin from "../Img/linkedin.svg";
+import EstrategiaComunicacao from "../../Functions/Calculos";
+import Icon from "../../Functions/Icons";
+import { formataMoeda, formataPercent } from "../../Functions/Formatador";
+import logoMeta from "../../Img/meta.svg";
+import logoGoogle from "../../Img/googleads.svg";
+import logoLinkedin from "../../Img/linkedin.svg";
 
 function CalcDistribuicao({ budget }) {
     const [estrategia, setEstrategia] = useState(0);

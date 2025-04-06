@@ -1,6 +1,3 @@
-import Icon from "./Icons";
-import { formataMoeda, formataPercent } from "./Formatador";
-
 function Modais( { taxaCliques, setTaxaCliques, taxaConversao, setTaxaConversao, ticketMedio, setTicketMedio } ) {
     return (
         <div>
