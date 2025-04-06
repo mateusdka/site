@@ -1,6 +1,4 @@
-import { formataMoeda, formataPercent } from "../Functions/Formatador";
-
-export function EstrategiaComunicacao(budget, estrategia, empresa) {
+function EstrategiaComunicacao(budget, estrategia, empresa) {
 
     let estrategiaFases = [0, 0, 0];
     estrategia === 0 ? 
@@ -87,51 +85,47 @@ export function EstrategiaComunicacao(budget, estrategia, empresa) {
         ]
     ];
 
-    return {
-        "awFase" : formataMoeda(awFase),
-        "awFaseP" : formataPercent(estrategiaFases[0]),
-        "awFaseBar" : estrategiaFases[0] * 100,
-        "cnFase" : formataMoeda(cnFase),
-        "cnFaseP" : formataPercent(estrategiaFases[1]),
-        "cnFaseBar" : estrategiaFases[1] * 100,
-        "dcFase" : formataMoeda(dcFase),
-        "dcFaseP" : formataPercent(estrategiaFases[2]),
-        "dcFaseBar" : estrategiaFases[2] * 100,
+    return ({
+        "awFase" : awFase,
+        "awFaseP" : estrategiaFases[0],
+        "cnFase" : cnFase,
+        "cnFaseP" : estrategiaFases[1],
+        "dcFase" : dcFase,
+        "dcFaseP" : estrategiaFases[2],
+        
+        "invMeta" : invMeta,
+        "invMetaP" : invMetaPercent,
 
-        "invMeta" : formataMoeda(invMeta),
-        "invMetaP" : formataPercent(invMetaPercent),
-        "invMetaBar" : invMetaPercent * 100,
+        "invGoogle" : invGoogle,
+        "invGoogleP" : invGooglePercent,
 
-        "invGoogle" : formataMoeda(invGoogle),
-        "invGoogleP" : formataPercent(invGooglePercent),
-        "invGoogleBar" : invGooglePercent * 100,
-
-        "invLinkedin" : formataMoeda(invLinkedin),
-        "invLinkedinP" : formataPercent(invLinkedinPercent),
-        "invLinkedinBar" : invLinkedinPercent * 100,
-
-        "awMeta" : formataMoeda(awMeta),
-        "awMetaP" : formataPercent(tipoEmpresa[0][0]),
-        "cnMeta" : formataMoeda(cnMeta),
-        "cnMetaP" : formataPercent(tipoEmpresa[1][0]),
-        "dcMeta" : formataMoeda(dcMeta),
-        "dcMetaP" : formataPercent(tipoEmpresa[2][0]),
-
-        "awGoogle" : formataMoeda(awGoogle),
-        "awGoogleP" : formataPercent(tipoEmpresa[0][1]),
-        "cnGoogle" : formataMoeda(cnGoogle),
-        "cnGoogleP" : formataPercent(tipoEmpresa[1][1]),
-        "dcGoogle" : formataMoeda(dcGoogle),
-        "dcGoogleP" : formataPercent(tipoEmpresa[2][1]),
-
-        "awLinkedin" : formataMoeda(awLinkedin),
-        "awLinkedinP" : formataPercent(tipoEmpresa[0][2]),
-        "cnLinkedin" : formataMoeda(cnLinkedin),
-        "cnLinkedinP" : formataPercent(tipoEmpresa[1][2]),
-        "dcLinkedin" : formataMoeda(dcLinkedin),
-        "dcLinkedinP" : formataPercent(tipoEmpresa[2][2]),
-
+        "invLinkedin" : invLinkedin,
+        "invLinkedinP" : invLinkedinPercent,
+        
+        "awMeta" : awMeta,
+        "awMetaP" : tipoEmpresa[0][0],
+        "cnMeta" : cnMeta,
+        "cnMetaP" : tipoEmpresa[1][0],
+        "dcMeta" : dcMeta,
+        "dcMetaP" : tipoEmpresa[2][0],
+        
+        "awGoogle" : awGoogle,
+        "awGoogleP" : tipoEmpresa[0][1],
+        "cnGoogle" : cnGoogle,
+        "cnGoogleP" : tipoEmpresa[1][1],
+        "dcGoogle" : dcGoogle,
+        "dcGoogleP" : tipoEmpresa[2][1],
+        
+        "awLinkedin" : awLinkedin,
+        "awLinkedinP" : tipoEmpresa[0][2],
+        "cnLinkedin" : cnLinkedin,
+        "cnLinkedinP" : tipoEmpresa[1][2],
+        "dcLinkedin" : dcLinkedin,
+        "dcLinkedinP" : tipoEmpresa[2][2],
+        
         "distrFinal" : distrFinal,
         "investFinal" : investFinal,
-    };
+    });
 };
+
+export default EstrategiaComunicacao;

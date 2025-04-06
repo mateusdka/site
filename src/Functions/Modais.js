@@ -79,28 +79,8 @@ function Modais( { taxaCliques, setTaxaCliques, taxaConversao, setTaxaConversao,
                         mais comum em campanhas bem segmentadas.</p>
                         <p>Para otimizar os resultados, é essencial investir em criativos atrativos, mensagens relevantes e 
                         uma estratégia de segmentação eficaz.</p>
-                        <p>Se você já realizou Campanhas Digitais anteriormente e conhece o CTR do seu produto ou marca, ajuste abaixo.</p>
-                    </div>
-                    <div className="modal-footer justify-content-center text-center">
-                        <h3 className="w-100">{ formataPercent(taxaCliques) }</h3>
-                        <p className="w-100"><strong>Taxa de Cliques (CTR).</strong><br/>
-                        (Calculado sobre as Visualizações)</p>
-                        <p className="w-100">
-                            <button 
-                                type="button" 
-                                class="btn btn-light" 
-                                onClick={ () => (setTaxaCliques( taxaCliques - 0.001 )) }
-                                disabled={taxaCliques <= 0}>
-                                    <Icon name="remove" size={18} color="red" />
-                            </button>
-                                    <span className="m-2">0,10%</span>
-                            <button 
-                                type="button" 
-                                class="btn btn-light" 
-                                onClick={ () => (setTaxaCliques( taxaCliques + 0.001 )) }>
-                                    <Icon name="add" size={18} color="green" />
-                            </button>
-                        </p>
+                        <p>Se você já realizou Campanhas Digitais anteriormente e conhece o CTR do seu produto ou marca,
+                        ajuste este valor para a porcentagem conhecida.</p>
                     </div>
                 </div>
             </div>
@@ -110,7 +90,7 @@ function Modais( { taxaCliques, setTaxaCliques, taxaConversao, setTaxaConversao,
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="modalConversao">Sobre a Taxa de Cliques (CTR)</h1>
+                        <h1 class="modal-title fs-5" id="modalConversao">Sobre a Taxa de Conversão</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -123,28 +103,7 @@ function Modais( { taxaCliques, setTaxaCliques, taxaConversao, setTaxaConversao,
                         <p>Para maximizar os resultados, é essencial otimizar a página de destino, oferecer uma navegação intuitiva
                         e garantir chamadas para ação (CTAs) eficazes.</p>
                         <p>Se você já realizou Campanhas Digitais anteriormente e conhece a taxa de conversão do seu site,
-                        ajuste o indicador abaixo.</p> 
-                    </div>
-                    <div className="modal-footer justify-content-center text-center">
-                        <h3 className="w-100">{ formataPercent(taxaConversao) }</h3>
-                        <p className="w-100"><strong>Taxa de Conversão.</strong><br/>
-                        (Calculado sobre cliques)</p>
-                        <p className="w-100">
-                            <button 
-                                type="button" 
-                                class="btn btn-light" 
-                                onClick={ () => (setTaxaConversao( taxaConversao - 0.001 )) }
-                                disabled={taxaConversao <= 0}>
-                                    <Icon name="remove" size={18} color="red" />
-                            </button>
-                                <span className="m-2">0,10%</span>
-                            <button 
-                                type="button" 
-                                class="btn btn-light" 
-                                onClick={ () => (setTaxaConversao( taxaConversao + 0.001 )) }>
-                                    <Icon name="add" size={18} color="green" />
-                            </button>
-                        </p>
+                        ajuste o indicador.</p> 
                     </div>
                 </div>
             </div>
@@ -164,28 +123,7 @@ function Modais( { taxaCliques, setTaxaCliques, taxaConversao, setTaxaConversao,
                         <p>Esse indicador ajuda a entender o comportamento dos consumidores e a eficiência das estratégias de vendas.
                         Um ticket médio mais alto pode indicar que os clientes estão comprando mais itens por vez ou produtos
                         de maior valor. Ele é muito útil para definir metas, planejar promoções e melhorar os resultados do negócio.</p>
-                        <p>Se você já conhece o ticket médio da suas operações, ajuste o valor informado abaixo.</p> 
-                    </div>
-                    <div className="modal-footer justify-content-center text-center">
-                        <h3 className="w-100">{ formataMoeda(ticketMedio) }</h3>
-                        <p className="w-100"><strong>Taxa de Conversão.</strong><br/>
-                        (Calculado sobre cliques)</p>
-                        <p className="w-100">
-                            <button 
-                                type="button" 
-                                class="btn btn-light" 
-                                onClick={ () => (setTicketMedio ( ticketMedio - 50 )) }
-                                disabled={ticketMedio <= 0}>
-                                    <Icon name="remove" size={18} color="red" />
-                            </button>
-                                <span className="m-2">R$ 50,00</span>
-                            <button 
-                                type="button" 
-                                class="btn btn-light" 
-                                onClick={ () => (setTicketMedio( ticketMedio + 50 )) }>
-                                    <Icon name="add" size={18} color="green" />
-                            </button>
-                        </p>
+                        <p>Se você já conhece o ticket médio da suas operações, ajuste o valor informado.</p> 
                     </div>
                 </div>
             </div>
