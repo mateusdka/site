@@ -122,42 +122,42 @@ function CalcDistribuicao({ budget }) {
                                 <td>{ formataMoeda(calculo.investFinal[0][2] / 30.4) }</td>
                             </tr>
                             <tr className="table-active">
-                                <td><img src={logoGoogle} width={21} height={21} alt="Meta Ads" /> Google Ads</td>
+                                <td><img src={logoGoogle} width={21} height={21} alt="Google Ads" /> Google Ads</td>
                                 <td></td>
                                 <td></td>
                                 <td>{ formataMoeda(calculo.awGoogle) } ({formataPercent(calculo.awGoogleP)} do Awareness)</td>
                                 <td>{ formataMoeda(calculo.awGoogle / 30.4) }</td>
                             </tr>
                             <tr>
-                                <td><img src={logoGoogle} width={21} height={21} alt="Meta Ads" /> Google Ads</td>
+                                <td><img src={logoGoogle} width={21} height={21} alt="Google Ads" /> Google Ads</td>
                                 <td><Icon name="search" size={16} color="white" /> Busca (Search)</td>
                                 <td><Icon name="keyword" size={16} color="white" /> Palavras-chave</td>
                                 <td>{ formataMoeda(calculo.investFinal[0][3]) } ({ formataPercent(calculo.distrFinal[0][3]) })</td>
                                 <td>{ formataMoeda(calculo.investFinal[0][3] / 30.4) }</td>
                             </tr>
                             <tr>
-                                <td><img src={logoGoogle} width={21} height={21} alt="Meta Ads" /> Google Ads</td>
+                                <td><img src={logoGoogle} width={21} height={21} alt="Google Ads" /> Google Ads</td>
                                 <td><Icon name="display" size={16} color="white" /> Banners (Display)</td>
                                 <td><Icon name="profile" size={16} color="white" /> Perfil do Público</td>
                                 <td>{ formataMoeda(calculo.investFinal[0][4]) } ({ formataPercent(calculo.distrFinal[0][4]) })</td>
                                 <td>{ formataMoeda(calculo.investFinal[0][4] / 30.4) }</td>
                             </tr>
                             <tr>
-                                <td><img src={logoGoogle} width={21} height={21} alt="Meta Ads" /> Google Ads</td>
+                                <td><img src={logoGoogle} width={21} height={21} alt="Google Ads" /> Google Ads</td>
                                 <td><Icon name="search" size={16} color="white" /> Banner (Display)</td>
                                 <td><Icon name="lookalike" size={16} color="white" /> Listas</td>
                                 <td>{ formataMoeda(calculo.investFinal[0][5]) } ({ formataPercent(calculo.distrFinal[0][5]) })</td>
                                 <td>{ formataMoeda(calculo.investFinal[0][5] / 30.4) }</td>
                             </tr>
                             <tr className="table-active">
-                                <td><img src={logoLinkedin} width={21} height={21} alt="Meta Ads" /> LinkedIn Ads</td>
+                                <td><img src={logoLinkedin} width={21} height={21} alt="LinkedIn Ads" /> LinkedIn Ads</td>
                                 <td></td>
                                 <td></td>
                                 <td>{ formataMoeda(calculo.awLinkedin) } ({formataPercent(calculo.awLinkedinP)} do Awareness)</td>
                                 <td>{ formataMoeda(calculo.awLinkedin / 30.4) } {calculo.awLinkedin < 800 ? <Icon name="alert" size={16} color="orange" /> : ""}</td>
                             </tr>
                             <tr>
-                                <td><img src={logoLinkedin} width={21} height={21} alt="Meta Ads" /> LinkedIn Ads</td>
+                                <td><img src={logoLinkedin} width={21} height={21} alt="LinkedIn Ads" /> LinkedIn Ads</td>
                                 <td><Icon name="post" size={16} color="white" /> Dark Post (Patrocinado)</td>
                                 <td><Icon name="profile" size={16} color="white" /> Perfil do Público</td>
                                 <td>{ formataMoeda(calculo.investFinal[0][6]) } ({ formataPercent(calculo.distrFinal[0][6]) })</td>
@@ -185,35 +185,35 @@ function CalcDistribuicao({ budget }) {
                                 <td>{ formataMoeda(calculo.investFinal[1][0] / 30.4) }</td>
                             </tr>
                             <tr className="table-active">
-                                <td><img src={logoGoogle} width={21} height={21} alt="Meta Ads" /> Google Ads</td>
+                                <td><img src={logoGoogle} width={21} height={21} alt="Google Ads" /> Google Ads</td>
                                 <td></td>
                                 <td></td>
                                 <td>{ formataMoeda(calculo.cnGoogle) } ({formataPercent(calculo.cnGoogleP)} da Consideração)</td>
                                 <td>{ formataMoeda(calculo.cnGoogle / 30.4) }</td>
                             </tr>
                             <tr>
-                                <td><img src={logoGoogle} width={21} height={21} alt="Meta Ads" /> Google Ads</td>
+                                <td><img src={logoGoogle} width={21} height={21} alt="Google Ads" /> Google Ads</td>
                                 <td><Icon name="search" size={16} color="white" /> Busca (Search)</td>
                                 <td><Icon name="keyword" size={16} color="white" /> Palavras-chave</td>
                                 <td>{ formataMoeda(calculo.investFinal[1][1]) } ({ formataPercent(calculo.distrFinal[1][1]) })</td>
                                 <td>{ formataMoeda(calculo.investFinal[1][1] / 30.4) }</td>
                             </tr>
                             <tr>
-                                <td><img src={logoGoogle} width={21} height={21} alt="Meta Ads" /> Google Ads</td>
+                                <td><img src={logoGoogle} width={21} height={21} alt="Google Ads" /> Google Ads</td>
                                 <td><Icon name="display" size={16} color="white" /> Banners (Display)</td>
                                 <td><Icon name="remarketing" size={16} color="white" /> Remarketing</td>
                                 <td>{ formataMoeda(calculo.investFinal[1][2]) } ({ formataPercent(calculo.distrFinal[1][2]) })</td>
                                 <td>{ formataMoeda(calculo.investFinal[1][2] / 30.4) }</td>
                             </tr>
                             <tr className="table-active">
-                                <td><img src={logoLinkedin} width={21} height={21} alt="Meta Ads" /> LinkedIn Ads</td>
+                                <td><img src={logoLinkedin} width={21} height={21} alt="LinkedIn Ads" /> LinkedIn Ads</td>
                                 <td></td>
                                 <td></td>
                                 <td>{ formataMoeda(calculo.cnLinkedin) } ({formataPercent(calculo.cnLinkedinP)} da Consideração)</td>
                                 <td>{ formataMoeda(calculo.cnLinkedin / 30.4) } {calculo.cnLinkedin < 800 ? <Icon name="alert" size={16} color="orange" /> : ""}</td>
                             </tr>
                             <tr>
-                                <td><img src={logoLinkedin} width={21} height={21} alt="Meta Ads" /> LinkedIn Ads</td>
+                                <td><img src={logoLinkedin} width={21} height={21} alt="LinkedIn Ads" /> LinkedIn Ads</td>
                                 <td><Icon name="post" size={16} color="white" /> Dark Post (Patrocinado)</td>
                                 <td><Icon name="remarketing" size={16} color="white" /> Remarketing</td>
                                 <td>{ formataMoeda(calculo.investFinal[1][3]) } ({ formataPercent(calculo.distrFinal[1][3]) })</td>
@@ -248,35 +248,35 @@ function CalcDistribuicao({ budget }) {
                                 <td>{ formataMoeda(calculo.investFinal[2][1] / 30.4) }</td>
                             </tr>
                             <tr className="table-active">
-                                <td><img src={logoGoogle} width={21} height={21} alt="Meta Ads" /> Google Ads</td>
+                                <td><img src={logoGoogle} width={21} height={21} alt="Google Ads" /> Google Ads</td>
                                 <td></td>
                                 <td></td>
                                 <td>{ formataMoeda(calculo.dcGoogle) } ({formataPercent(calculo.dcGoogleP)} da Consideração)</td>
                                 <td>{ formataMoeda(calculo.dcGoogle / 30.4) }</td>
                             </tr>
                             <tr>
-                                <td><img src={logoGoogle} width={21} height={21} alt="Meta Ads" /> Google Ads</td>
+                                <td><img src={logoGoogle} width={21} height={21} alt="Google Ads" /> Google Ads</td>
                                 <td><Icon name="search" size={16} color="white" /> Busca (Search)</td>
                                 <td><Icon name="keyword" size={16} color="white" /> Palavras-chave</td>
                                 <td>{ formataMoeda(calculo.investFinal[2][2]) } ({ formataPercent(calculo.distrFinal[2][2]) })</td>
                                 <td>{ formataMoeda(calculo.investFinal[2][2] / 30.4) }</td>
                             </tr>
                             <tr>
-                                <td><img src={logoGoogle} width={21} height={21} alt="Meta Ads" /> Google Ads</td>
+                                <td><img src={logoGoogle} width={21} height={21} alt="Google Ads" /> Google Ads</td>
                                 <td><Icon name="display" size={16} color="white" /> Banners (Display)</td>
                                 <td><Icon name="remarketing" size={16} color="white" /> Remarketing</td>
                                 <td>{ formataMoeda(calculo.investFinal[2][3]) } ({ formataPercent(calculo.distrFinal[2][3]) })</td>
                                 <td>{ formataMoeda(calculo.investFinal[2][3] / 30.4) }</td>
                             </tr>
                             <tr className="table-active">
-                                <td><img src={logoLinkedin} width={21} height={21} alt="Meta Ads" /> LinkedIn Ads</td>
+                                <td><img src={logoLinkedin} width={21} height={21} alt="LinkedIn Ads" /> LinkedIn Ads</td>
                                 <td></td>
                                 <td></td>
                                 <td>{ formataMoeda(calculo.dcLinkedin) } ({formataPercent(calculo.dcLinkedinP)} da Consideração)</td>
                                 <td>{ formataMoeda(calculo.dcLinkedin / 30.4) } {calculo.dcLinkedin < 800 ? <Icon name="alert" size={16} color="orange" /> : ""}</td>
                             </tr>
                             <tr>
-                                <td><img src={logoLinkedin} width={21} height={21} alt="Meta Ads" /> LinkedIn Ads</td>
+                                <td><img src={logoLinkedin} width={21} height={21} alt="LinkedIn Ads" /> LinkedIn Ads</td>
                                 <td><Icon name="document" size={16} color="white" /> Documento</td>
                                 <td><Icon name="remarketing" size={16} color="white" /> Remarketing</td>
                                 <td>{ formataMoeda(calculo.investFinal[2][4]) } ({ formataPercent(calculo.distrFinal[2][4]) })</td>
