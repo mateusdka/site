@@ -11,7 +11,7 @@ function Navigation() {
   return (
     <nav className="navbar navbar-expand-lg bg-white shadow-sm">
       <div className="container">
-        <a className="navbar-brand" href="#"><img className="me-4" src={Logo} width={100} /> mateus fardin</a>
+        <a className="navbar-brand" href="/"><img className="me-4" src={Logo} width={100} /> mateus fardin</a>
 
         {/* Botão para alternar o menu em telas menores */}
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">

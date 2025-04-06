@@ -1,6 +1,7 @@
 import LogoWhite from '../Img/logowhite.svg';
 import Me from '../Img/me.jpg';
 import LogoLinkedin from "../Img/linkedin.svg";
+import LogoGit from "../Img/github.svg";
 
 function About() {
   return (
@@ -18,7 +19,10 @@ function About() {
             <a href="https://www.linkedin.com/in/mateusfardin/" target="_blank" rel="noopener noreferrer">
               <img src={LogoLinkedin} alt="Logo Linkedin" style={{ width: '30px', height: '30px' }} />
             </a>
-            
+            <a href="https://github.com/mateusdka" target="_blank" rel="noopener noreferrer">
+              <img src={LogoGit} alt="Logo GitHub" style={{ width: '30px', height: '30px' }} />
+            </a>
+
           </div>
           <div className="col-lg bg-dark rounded p-3 text-start">
             <p>Este site é um projeto em React que venho desenvolvendo enquanto avanço 
