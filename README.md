@@ -1,4 +1,4 @@
-# 🌐 Portfólio de Projetos – Mateus DKA
+# 🌐 Portfólio de Projetos – Mateus Fardin
 
 Bem-vindo ao repositório do meu site pessoal/portfólio! Este projeto foi criado com o objetivo de reunir e apresentar de forma prática alguns dos projetos que desenvolvi para aplicar meus conhecimentos em desenvolvimento web com React, Bootstrap e outras tecnologias.
 
