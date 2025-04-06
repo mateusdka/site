@@ -11,7 +11,7 @@ Bem-vindo ao repositório do meu site pessoal/portfólio! Este projeto foi criad
 - **Bootstrap 5**
 - **JavaScript**
 - **HTML/CSS**
-- **Hospedagem via GitHub Pages ou servidor próprio**
+- **Hospedagem via servidor próprio (mateusfardin.com.br)**
 
 ---
 
@@ -69,7 +69,6 @@ Este portfólio foi desenvolvido por um estudante de **Análise e Desenvolviment
 
 - LinkedIn: [linkedin.com/in/mateusdka](https://www.linkedin.com/in/mateusdka)
 - GitHub: [@mateusdka](https://github.com/mateusdka)
-- E-mail: *(adicione aqui se quiser)*
 
 ---
 
