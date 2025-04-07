@@ -14,6 +14,10 @@ body {
   font-weight: bold;
 }
 
+#mainNavbar {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 .banner-home {
   background-image: url(./Img/logo.svg);
   background-repeat: no-repeat;
