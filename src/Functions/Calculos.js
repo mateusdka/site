@@ -57,7 +57,7 @@ function EstrategiaComunicacao(budget, estrategia, empresa) {
 
     // A distribuição é ajustada com base em valores específicos de investimento em cada canal.
     // Se o investimento em Meta for maior que 5000, a distribuição é ajustada para comportar segmentações como Look Alike.
-        if (awMeta > 5000) { distrFinal[0][0] = 0.35; distrFinal[0][1] = 0.35; distrFinal[0][2] = 0.30 }
+    if (awMeta > 5000) { distrFinal[0][0] = 0.35; distrFinal[0][1] = 0.35; distrFinal[0][2] = 0.30 }
     else { distrFinal[0][0] = 0.40; distrFinal[0][1] = 0.60; distrFinal[0][2] = 0.0; };
 
     // Se o investimento em Google for maior que 5000, a distribuição é ajustada para comportar segmentações com Listas.

@@ -88,21 +88,9 @@ function Calculadora() {
 
             <h5 className="display-6 banner-text rounded p-3">Sobre este projeto</h5>
 
-            <p>Este projeto foi desenvolvido como uma forma de praticar e consolidar meus 
-              conhecimentos em <strong>React</strong>, com ênfase no uso de diversos <strong>hooks</strong> 
-              (<strong>useState</strong>, <strong>useEffect</strong>) para gerenciamento de estado e efeitos 
-              colaterais. Utilizei <strong>Bootstrap</strong> para estilização responsiva e <strong>react-router-dom</strong> 
-              para navegação entre diferentes seções do sistema.</p>
-
-            <p>Além da interface interativa, o projeto também inclui uma lógica personalizada de cálculos 
-              para estimar <strong>indicadores de performance digital</strong> e <strong>distribuição de 
-                investimentos</strong> por canais e fases do funil de marketing. Toda a lógica de cálculo 
-                foi implementada manualmente em JavaScript, sem uso de bibliotecas externas específicas 
-                para isso, com base em benchmarks reais do mercado.</p>
-
-            <p>Esse projeto buscou integrar <strong>lógica de negócios</strong> com uma <strong>interface 
-              clara e responsiva</strong>, permitindo simulações e ajustes dinâmicos de variáveis para 
-              tomada de decisão em estratégias de mídia paga.</p>
+            <p>Este projeto foi desenvolvido como uma forma de praticar e consolidar meus conhecimentos em <strong>React</strong>, com ênfase no uso de diversos <strong>hooks</strong> (<strong>useState</strong>, <strong>useEffect</strong>) para gerenciamento de estado e efeitos colaterais. Utilizei <strong>Bootstrap</strong> para estilização responsiva e <strong>react-router-dom</strong> para navegação entre diferentes seções do sistema.</p>
+            <p>Além da interface interativa, o projeto também inclui uma lógica personalizada de cálculos para estimar <strong>indicadores de performance digital</strong> e <strong>distribuição de investimentos</strong> por canais e fases do funil de marketing. Toda a lógica de cálculo foi implementada manualmente em JavaScript, sem uso de bibliotecas externas específicas para isso, com base em benchmarks reais do mercado.</p>
+            <p>Esse projeto buscou integrar <strong>lógica de negócios</strong> com uma <strong>interface clara e responsiva</strong>, permitindo simulações e ajustes dinâmicos de variáveis para tomada de decisão em estratégias de mídia paga.</p>
 
           </div>
 
@@ -110,15 +98,8 @@ function Calculadora() {
 
             <h5 className="display-6 banner-text rounded p-3">Contexto da Calculadora</h5>
 
-            <p>A Calculadora de Campanhas Digitais foi idealizada para auxiliar profissionais de 
-              marketing a estimar o retorno e a distribuição ideal de seus investimentos mensais, 
-              com base em variáveis como <strong>público estimado, taxa de cliques (CTR), taxa de 
-                conversão</strong> e <strong>ticket médio</strong>.</p>
-
-            <p>Ela simula cenários com foco em performance (ROAS) e distribuição estratégica por 
-              canais — como Meta, Google e LinkedIn — além de fases do funil (Awareness, Consideração 
-              e Decisão). A ferramenta se adapta a diferentes tipos de negócio, como <strong>B2B</strong> 
-              e <strong>varejo</strong>, oferecendo uma visão clara e objetiva do potencial de retorno.</p>
+            <p>A Calculadora de Campanhas Digitais foi idealizada para auxiliar profissionais de marketing a estimar o retorno e a distribuição ideal de seus investimentos mensais, com base em variáveis como <strong>público estimado, taxa de cliques (CTR), taxa de conversão</strong> e <strong>ticket médio</strong>.</p>
+            <p>Ela simula cenários com foco em performance (ROAS) e distribuição estratégica por canais — como Meta, Google e LinkedIn — além de fases do funil (Awareness, Consideração e Decisão). A ferramenta se adapta a diferentes tipos de negócio, como <strong>B2B</strong> e <strong>varejo</strong>, oferecendo uma visão clara e objetiva do potencial de retorno.</p>
               
           </div>
         </div>

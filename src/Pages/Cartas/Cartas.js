@@ -95,37 +95,17 @@ function Cartas() {
 
             <h5 className="display-6 banner-text rounded p-3">Sobre este projeto</h5>
 
-            <p>Este projeto das Cartas de Tarot foi desenvolvido como uma forma de praticar 
-              e consolidar meus conhecimentos em <strong>React</strong>, com ênfase no uso 
-              de diversos <strong>hooks</strong> (<strong>useState</strong>, <strong>useEffect</strong>, 
-              <strong>useRef</strong>) para controle de estado, efeitos colaterais e manipulação do DOM. 
-              Utilizei também <strong>Bootstrap</strong> para o layout responsivo e estilização,
-              além de <strong>react-router-dom</strong> para a navegação entre páginas.</p>
-
-            <p>Os dados exibidos — nomes, significados e descrições das cartas — são carregados 
-              a partir de um arquivo <strong>JSON</strong>, originalmente gerado a partir de uma 
-              <strong>API REST externa</strong>. Esse conteúdo foi traduzido automaticamente e 
-              adaptado. Como a API original foi descontinuada, optei por incluir o JSON diretamente 
-              nos arquivos do projeto, garantindo que os dados permaneçam acessíveis e funcionais.</p>
-
-            <p>Neste projeto, o objetivou foi a atenção à <strong>experiência do usuário</strong>, 
-            com interações dinâmicas como o sorteio aleatório de cartas, visualização de cartas 
-            invertidas e rolagem suave para os resultados. Trata-se de um exercício de <strong>lógica, 
-              interatividade e interface</strong>.</p>
+            <p>Este projeto das Cartas de Tarot foi desenvolvido como uma forma de praticar e consolidar meus conhecimentos em <strong>React</strong>, com ênfase no uso de diversos <strong>hooks</strong> (<strong>useState</strong>, <strong>useEffect</strong>, <strong>useRef</strong>) para controle de estado, efeitos colaterais e manipulação do DOM. Utilizei também <strong>Bootstrap</strong> para o layout responsivo e estilização, além de <strong>react-router-dom</strong> para a navegação entre páginas.</p>
+            <p>Os dados exibidos — nomes, significados e descrições das cartas — são carregados a partir de um arquivo <strong>JSON</strong>, originalmente gerado a partir de uma <strong>API REST externa</strong>. Esse conteúdo foi traduzido automaticamente e adaptado. Como a API original foi descontinuada, optei por incluir o JSON diretamente nos arquivos do projeto, garantindo que os dados permaneçam acessíveis e funcionais.</p>
+            <p>Neste projeto, o objetivo foi a atenção à <strong>experiência do usuário</strong>, com interações dinâmicas como o sorteio aleatório de cartas, visualização de cartas invertidas e rolagem suave para os resultados. Trata-se de um exercício de <strong>lógica, interatividade e interface</strong>.</p>
+          
           </div>
 
           <div className="col-lg bg-light rounded p-5">
 
             <h5 className="display-6 banner-text rounded p-3">Sobre o Tarot</h5>
-
-            <p>O Tarot é uma prática antiga que combina arte, simbolismo e espiritualidade. Ele é 
-              frequentemente utilizado como uma ferramenta de autoconhecimento e orientação, 
-              permitindo que os indivíduos explorem suas emoções, desafios e potenciais futuros.</p>
-
-            <p>As cartas de Tarot são ricas em simbolismo e cada uma delas possui significados únicos 
-              que podem variar dependendo do contexto da leitura. O Tarot pode ser utilizado para 
-              responder perguntas específicas, refletir sobre situações da vida ou simplesmente como 
-              um meio de meditação e introspecção.</p>
+            <p>O Tarot é uma prática antiga que combina arte, simbolismo e espiritualidade. Ele é frequentemente utilizado como uma ferramenta de autoconhecimento e orientação, permitindo que os indivíduos explorem suas emoções, desafios e potenciais futuros.</p>
+            <p>As cartas de Tarot são ricas em simbolismo e cada uma delas possui significados únicos que podem variar dependendo do contexto da leitura. O Tarot pode ser utilizado para responder perguntas específicas, refletir sobre situações da vida ou simplesmente como um meio de meditação e introspecção.</p>
 
           </div>
         </div>
