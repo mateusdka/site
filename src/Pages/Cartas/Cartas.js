@@ -105,7 +105,8 @@ function Cartas() {
 
             <h5 className="display-6 banner-text rounded p-3">Sobre o Tarot</h5>
             <p>O Tarot é uma prática antiga que combina arte, simbolismo e espiritualidade. Ele é frequentemente utilizado como uma ferramenta de autoconhecimento e orientação, permitindo que os indivíduos explorem suas emoções, desafios e potenciais futuros.</p>
-            <p>As cartas de Tarot são ricas em simbolismo e cada uma delas possui significados únicos que podem variar dependendo do contexto da leitura. O Tarot pode ser utilizado para responder perguntas específicas, refletir sobre situações da vida ou simplesmente como um meio de meditação e introspecção.</p>
+            <p>As cartas de Tarot são ricas em simbolismo, e cada uma delas possui significados únicos que podem variar dependendo do contexto da leitura. O Tarot pode ser utilizado para responder perguntas específicas, refletir sobre situações da vida ou simplesmente como um meio de meditação e introspecção.</p>
+            <p>Neste projeto, a seleção das cartas ocorre por meio de um processo pseudoaleatório — ou seja, uma simulação de aleatoriedade gerada por algoritmos computacionais. Embora não exista aleatoriedade "real" na computação, esse recurso permite criar uma experiência similar ao sorteio físico de uma carta, adicionando um elemento de surpresa e reflexão ao processo de descoberta.</p>
 
           </div>
         </div>
