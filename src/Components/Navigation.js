@@ -50,6 +50,9 @@ function Navigation() {
                   <Link to="/projetos/cartas-de-tarot" className={location.pathname === '/projetos/cartas-de-tarot' ?
                     'nav-link nav-active' : 'nav-link'}>Cartas de Tarot
                   </Link>
+                  <Link to="/projetos/clima" className={location.pathname === '/projetos/clima' ?
+                    'nav-link nav-active' : 'nav-link'}>Clima
+                  </Link>
                 </li>
               </ul>
             </li>
