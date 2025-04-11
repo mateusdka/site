@@ -124,7 +124,7 @@ function Clima() {
 
                 {previsao && (
                     <div className="mt-4">
-                        <h5 className="mb-3">Previsão para 3 dias</h5>
+                        <h5 className="mb-3">Previsão para 8 dias</h5>
                         <div className="row">
                             {previsao.time.map((data, i) => {
                                 const weather = weatherMap[previsao.weather_code[i]] || { desc: "Desconhecido", icon: "❓" };
