@@ -61,7 +61,7 @@ function Clima() {
 
         try {
             const { latitude, longitude } = cidadeSelecionada;
-            const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&daily=temperature_2m_max,temperature_2m_min,apparent_temperature_max,precipitation_probability_max,apparent_temperature_min,weather_code&timezone=America%2FSao_Paulo&forecast_days=3`;
+            const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&daily=temperature_2m_max,temperature_2m_min,apparent_temperature_max,precipitation_probability_max,apparent_temperature_min,weather_code&timezone=America%2FSao_Paulo&forecast_days=8`;
 
             const res = await fetch(url);
             const data = await res.json();
@@ -129,7 +129,7 @@ function Clima() {
                             {previsao.time.map((data, i) => {
                                 const weather = weatherMap[previsao.weather_code[i]] || { desc: "Desconhecido", icon: "❓" };
                                 return (
-                                    <div className="col-md-4 mb-3" key={i}>
+                                    <div className="col-md-3 mb-3" key={i}>
                                         <div className="card text-bg-dark">
                                             <img src={`/ImgClima/${weather.cardcap}.png`} className="card-img-top" alt={weather.desc} />
                                                 <h6 className="card-title text-end p-3">
