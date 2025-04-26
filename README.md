@@ -1,6 +1,6 @@
 # 🌐 Portfólio de Projetos – Mateus Fardin
 
-Bem-vindo ao repositório do meu site pessoal/portfólio! Este projeto foi criado com o objetivo de reunir e apresentar de forma prática alguns dos projetos que desenvolvi para aplicar meus conhecimentos em desenvolvimento web com React, Bootstrap e outras tecnologias.
+Bem-vindo ao repositório do meu **site pessoal/portfólio**, um projeto concebido para apresentar os meus principais projetos em desenvolvimento web, destacando competências em **React.js**, **Bootstrap 5**, **consumo de APIs**, **componentização** e **controle de estado**.
 
 ---
 
@@ -9,28 +9,45 @@ Bem-vindo ao repositório do meu site pessoal/portfólio! Este projeto foi criad
 - **React.js**
 - **React Router DOM**
 - **Bootstrap 5**
-- **JavaScript**
-- **HTML/CSS**
-- **Hospedagem via servidor próprio (mateusfardin.com.br)**
+- **JavaScript (ES6+)**
+- **HTML5 / CSS3**
+- **Hospedagem via servidor próprio ([mateusfardin.com.br](https://mateusfardin.com.br))**
 
 ---
 
-## 📁 Estrutura do Projeto
-
-O site apresenta diferentes seções com foco em projetos desenvolvidos com propósito didático e experimental:
+## 📁 Estrutura e Projetos Apresentados
 
 ### 🔮 Cartas de Tarô
-- Projeto com sorteio interativo de cartas de tarô.
-- Utiliza imagens estáticas, sorteio aleatório e rotação condicional para cartas invertidas.
-- Dados carregados de um arquivo `.json`, previamente traduzido a partir de uma API REST que foi descontinuada.
+- Sorteio interativo de cartas de tarô com rotação condicional para cartas invertidas.
+- Dados carregados de um arquivo `.json` traduzido de uma antiga API.
+- Prática de lógica condicional e manipulação de estados visuais.
 
 ### 📊 Calculadora de Campanhas Digitais
-- Simula a distribuição de verba em uma estratégia de marketing digital.
-- Permite personalizar indicadores como CPM, CTR, taxa de conversão e ticket médio.
-- Utiliza lógica baseada em benchmarks de mercado e modais explicativos para cada indicador.
+- Simula a distribuição de verba em estratégias de marketing digital.
+- Personaliza indicadores como CPM, CTR, taxa de conversão e ticket médio.
+- Aplica benchmarks de mercado e apresenta modais explicativos.
+- Exercício de lógica de negócio e UX (experiência de usuário).
+
+### ☁️ Previsão do Tempo
+- Projeto de consulta de previsão climática utilizando a **Open-Meteo API**.
+- Busca inteligente de cidades brasileiras com **autocomplete**.
+- Exibição de previsão para 8 dias com descrição, ícones, temperatura e chance de chuva.
+- Prática de **consumo de APIs**, **hooks** (`useState`, `useEffect`) e **tratamento de erros**.
 
 ### 👤 Sobre Mim
-- Página com uma breve descrição sobre minha trajetória, motivações e objetivos na área de tecnologia.
+- Página de apresentação pessoal com motivações, trajetória acadêmica e profissional.
+
+---
+
+## 💪 Habilidades Demonstradas
+
+- Criação de interfaces responsivas com **Bootstrap 5**.
+- Desenvolvimento de **Single Page Applications (SPA)** com **React Router**.
+- Consumo de **APIs públicas** e tratamento de dados assíncronos.
+- **Componentização** eficiente e reaproveitamento de código.
+- Utilização de **hooks** para gestão de estado e efeitos colaterais.
+- Escrita de **código limpo**, comentado e de fácil manutenção.
+- Hospedagem e publicação em **servidor próprio**.
 
 ---
 
@@ -45,11 +62,13 @@ npm install
 npm start
 ```
 
+O projeto estará disponível no navegador em `http://localhost:3000`.
+
 ---
 
 ## 🛠️ Build para Produção
 
-Para gerar os arquivos otimizados para publicação em servidor próprio ou hospedagem externa:
+Para gerar os arquivos otimizados para publicação:
 
 ```bash
 npm run build
@@ -61,11 +80,7 @@ Os arquivos finais estarão na pasta `/build`.
 
 ## 🧠 Sobre o Autor
 
-Este portfólio foi desenvolvido por um estudante de **Análise e Desenvolvimento de Sistemas** em constante evolução. A intenção é demonstrar, de forma prática, o uso de tecnologias modernas e boas práticas na criação de interfaces interativas e úteis, além de documentar a jornada de aprendizado.
-
----
-
-## 📬 Contato
+Portfólio desenvolvido por **Mateus Fardin**, estudante de **Análise e Desenvolvimento de Sistemas**, com foco no crescimento contínuo em tecnologias web modernas, boas práticas de programação e entrega de soluções úteis e interativas.
 
 - LinkedIn: [linkedin.com/in/mateusdka](https://www.linkedin.com/in/mateusdka)
 - GitHub: [@mateusdka](https://github.com/mateusdka)
@@ -74,4 +89,15 @@ Este portfólio foi desenvolvido por um estudante de **Análise e Desenvolviment
 
 ## 📄 Licença
 
-Este projeto está licenciado sob a **MIT License**. Sinta-se livre para explorar, adaptar e reutilizar com os devidos créditos.
+Este projeto está licenciado sob a **MIT License**. Sinta-se à vontade para explorar, adaptar e reutilizar com os devidos créditos.
+
+---
+
+## 🏆 Badges
+
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![OpenMeteo](https://img.shields.io/badge/OpenMeteo-00BFFF?style=for-the-badge&logo=cloudflare&logoColor=white)
