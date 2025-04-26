@@ -13,6 +13,7 @@ import About from './Pages/About';
 import Calculadora from './Pages/Calculadora/Calculadora';
 import Cartas from './Pages/Cartas/Cartas';
 import Clima from './Pages/Clima/Clima';
+import Precos from './Pages/Precos/Precos';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/" element={ <Home /> } />
             <Route path="/sobre" element={ <About /> } />
             <Route path="/projetos/calculadora-de-campanhas" element={ <Calculadora /> } />
+            <Route path="/projetos/precos" element={ <Precos /> } />
             <Route path="/projetos/cartas-de-tarot" element={ <Cartas /> } />
             <Route path="/projetos/clima" element={ <Clima /> } />
           </Routes>

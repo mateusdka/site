@@ -44,6 +44,9 @@ function Navigation() {
               </a>
               <ul className={`dropdown-menu ${scrolled ? "bg-dark navbar-dark" : ""}`}> {/* Submenu de projetos */}
                 <li>
+                  <Link to="/projetos/precos" className={location.pathname === '/projetos/precos' ?
+                    'nav-link nav-active' : 'nav-link'}>Preços do Agro
+                  </Link>
                   <Link to="/projetos/calculadora-de-campanhas" className={location.pathname === '/projetos/calculadora-de-campanhas' ?
                     'nav-link nav-active' : 'nav-link'}>Calculadora de Campanhas
                   </Link>
