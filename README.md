@@ -1,6 +1,20 @@
 # 🌐 Portfólio de Projetos – Mateus Fardin
 
-Bem-vindo ao repositório do meu **site pessoal/portfólio**, um projeto concebido para apresentar os meus principais projetos em desenvolvimento web, destacando competências em **React.js**, **Bootstrap 5**, **consumo de APIs**, **componentização** e **controle de estado**.
+## 📚 Sumário
+
+- [🚀 Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [📁 Estrutura e Projetos Apresentados](#-estrutura-e-projetos-apresentados)
+  - [🔮 Cartas de Tarô](#-cartas-de-tarô)
+  - [📊 Calculadora de Campanhas Digitais](#-calculadora-de-campanhas-digitais)
+  - [☁️ Previsão do Tempo](#-previsão-do-tempo)
+  - [📈 Preços Agropecuários](#-preços-agropecuários)
+  - [👤 Sobre Mim](#-sobre-mim)
+- [💪 Habilidades Demonstradas](#-habilidades-demonstradas)
+- [📦 Instalação e Execução Local](#-instalação-e-execução-local)
+- [🛠️ Build para Produção](#-build-para-produção)
+- [🧠 Sobre o Autor](#-sobre-o-autor)
+- [📄 Licença](#-licença)
+- [🏆 Badges](#-badges)
 
 ---
 
@@ -109,3 +123,5 @@ Este projeto está licenciado sob a **MIT License**. Sinta-se à vontade para ex
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![OpenMeteo](https://img.shields.io/badge/OpenMeteo-00BFFF?style=for-the-badge&logo=cloudflare&logoColor=white)
+![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white)
+![Crawlee](https://img.shields.io/badge/Crawlee-000000?style=for-the-badge&logo=apify&logoColor=white)
