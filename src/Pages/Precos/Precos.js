@@ -266,6 +266,30 @@ function Precos() {
                     </table>
                 </div>
             </div>
+            <div className="container-lg bg-white rounde p-5">
+
+                <div className="row gap-4">
+
+                    <div className="col-lg bg-light rounded p-5">
+
+                        <h5 className="display-6 banner-text rounded p-3">Sobre este projeto</h5>
+
+                        <p>Este projeto foi desenvolvido para criar uma interface de visualização dinâmica de dados do agronegócio, utilizando <strong>React</strong> com ênfase em <strong>hooks</strong> (<strong>useState</strong>, <strong>useEffect</strong>) para gerenciamento de estado, além de <strong>Chart.js</strong> para geração de gráficos interativos e <strong>Bootstrap</strong> para uma estilização responsiva.</p>
+                        <p>Os dados exibidos são provenientes de um <strong>scraper construído com Crawlee</strong>, que coleta preços médios mensais de produtos agropecuários a partir do site Agrolink, tratando corretamente formatações numéricas brasileiras. Após a coleta, os dados são armazenados em arquivos <strong>JSON</strong> e utilizados no frontend para renderizar gráficos de linha e tabelas filtráveis.</p>
+                        <p>O sistema permite que o usuário selecione múltiplos produtos, defina períodos específicos, visualize tendências de preço e exporte os dados em formato <strong>CSV UTF-8</strong> ou imagens <strong>PNG</strong> dos gráficos. Todo o processamento de dados e exportação foi implementado em <strong>JavaScript</strong>, focando em performance e acessibilidade.</p>
+
+                    </div>
+
+                    <div className="col-lg bg-light rounded p-5">
+
+                        <h5 className="display-6 banner-text rounded p-3">Acompanhar Preços</h5>
+
+                        <p>O acompanhamento de valores médios periódicos de produtos agrícolas é fundamental para toda a cadeia produtiva, permitindo uma visão estratégica sobre tendências de mercado, sazonalidades e custos de produção. A análise sistemática desses dados beneficia produtores, cooperativas, indústrias e distribuidores, oferecendo informações valiosas para planejamento, negociações e gestão de riscos.</p>
+                        <p>Sistemas que congregam esses valores em uma única plataforma facilitam a comparação entre diferentes produtos e ajudam a identificar relações e correlações importantes — como, por exemplo, o impacto da variação dos preços da soja e do milho (ingredientes essenciais da ração animal) nos preços do quilo do frango, da carne suína, do boi gordo e até mesmo do litro do leite. Essa visão integrada é essencial para antecipar movimentos de mercado e otimizar estratégias ao longo da cadeia do agronegócio.</p>
+
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
