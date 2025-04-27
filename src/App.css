@@ -57,3 +57,7 @@ body {
   transition: transform 0.5s ease;
 }
 
+.mini-text {
+  font-size: 0.8em;
+}
+
