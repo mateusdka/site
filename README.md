@@ -34,6 +34,14 @@ Bem-vindo ao repositório do meu **site pessoal/portfólio**, um projeto concebi
 - Exibição de previsão para 8 dias com descrição, ícones, temperatura e chance de chuva.
 - Prática de **consumo de APIs**, **hooks** (`useState`, `useEffect`) e **tratamento de erros**.
 
+### 📈 Preços Agropecuários
+- Visualização de históricos de preços médios de produtos agrícolas, com dados extraídos automaticamente do site Agrolink.
+- Permite a seleção de até 5 produtos para comparação simultânea.
+- Filtro de período por mês e ano.
+- Gráfico de linha responsivo (Chart.js) com exportação em PNG.
+- Tabela de dados detalhada com opção de exportação em CSV UTF-8.
+- Projeto integrado com scrapper Node.js e atualização periódica via GitHub Actions.
+
 ### 👤 Sobre Mim
 - Página de apresentação pessoal com motivações, trajetória acadêmica e profissional.
 
