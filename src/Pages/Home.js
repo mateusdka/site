@@ -24,6 +24,20 @@ function Home() {
           <Link to="/projetos/cartas-de-tarot" className="btn btn-outline-dark">Explorar Cartas</Link>
         </div>
 
+        {/* Bloco - Previsão do Tempo */}
+        <div className="col-lg bg-light rounded p-4">
+          <h5 className="banner-text rounded p-3">Previsão do Tempo</h5>
+          <p>Consulte a previsão meteorológica da sua cidade com dados atualizados de temperatura, clima e precipitação, apresentados em uma interface amigável e responsiva.</p>
+          <Link to="/projetos/clima" className="btn btn-outline-dark">Ver Previsão</Link>
+        </div>
+
+        {/* Bloco - Preços Agropecuários */}
+        <div className="col-lg bg-light rounded p-4">
+          <h5 className="banner-text rounded p-3">Preços Agropecuários</h5>
+          <p>Acompanhe a evolução dos preços médios de produtos agropecuários com gráficos interativos e exportação de dados. Ideal para análises de mercado e estudos de correlação.</p>
+          <Link to="/projetos/precos" className="btn btn-outline-dark">Visualizar Preços</Link>
+        </div>
+
         {/* Bloco - Sobre Mim */}
         <div className="col-lg bg-light rounded p-4">
           <h5 className="banner-text rounded p-3">Sobre Mim</h5>
